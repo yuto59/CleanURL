@@ -2,7 +2,7 @@
 // https://docs.swift.org/swift-book
 
 import Foundation
-///Users/riceomu/Desktop/SwiftPackage/CleanURL/BraveCleanURLs.json
+
 open class CleanURLManager {
     public init() {
         jsonData = [
@@ -36,7 +36,7 @@ open class CleanURLManager {
         }
     }
     // JSON data with configurations
-    var url:URL?
+    public var url:URL?
     let jsonData: [String: Any]
     public var data:Any?
     
