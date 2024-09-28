@@ -41,7 +41,7 @@ open class CleanURLManager {
     }
 
     // Function to clean the URL
-    func cleanURL(from urlString: String) -> String? {
+    public func cleanURL(from urlString: String) -> String? {
         // Check if the URL should be excluded
         if shouldExclude(url: urlString) {
             return urlString // Return original if matched to exclude
