@@ -7,6 +7,7 @@ import Foundation
 ///
 ///https://github.com/brave/brave-core/blob/c4efb412d81f738217f4fefeaa0378193444da35/components/url_sanitizer/browser/url_sanitizer_service.cc
 ///
+///
 open class URLSanitizerService {
     public init() {
         if let url = Bundle.module.url(forResource: "BraveCleanURLs", withExtension: "json") {
