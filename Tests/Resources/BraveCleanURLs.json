@@ -355,7 +355,7 @@
     {
         "include": [
             "*://youtu.be/*",
-            "*://*.youtube.com/*"
+            "*://*.youtube.com/watch?*"
         ],
         "exclude": [
 

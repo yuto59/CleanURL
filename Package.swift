@@ -20,7 +20,7 @@ let package = Package(
         .target(
             name: "CleanURL",
             resources: [
-                .copy("BraveCleanURLs.json"),
+                .process("BraveCleanURLs.json"),
             ]
         ),
         .testTarget(
