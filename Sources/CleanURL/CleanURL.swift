@@ -3,8 +3,8 @@
 
 import Foundation
 
-public class CleanURLManager {
-    init() {
+open class CleanURLManager {
+    public init() {
         jsonData = [
             "include": [
                 "*://*/*"
