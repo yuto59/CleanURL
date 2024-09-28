@@ -3,7 +3,7 @@
 
 import Foundation
 
-class CleanURLManager {
+public class CleanURLManager {
     init() {
         jsonData = [
             "include": [
