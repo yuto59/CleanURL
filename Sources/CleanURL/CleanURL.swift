@@ -38,7 +38,7 @@ open class CleanURLManager {
     // JSON data with configurations
     var url:URL?
     let jsonData: [String: Any]
-    var data:Any?
+    public var data:Any?
     
     // Extract configurations
     let includePatterns:[String]
