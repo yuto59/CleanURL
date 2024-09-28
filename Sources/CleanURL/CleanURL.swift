@@ -21,9 +21,24 @@ open class CleanURLManager {
         includePatterns = jsonData["include"] as? [String] ?? []
         excludePatterns = jsonData["exclude"] as? [String] ?? []
         paramsToRemove = jsonData["params"] as? [String] ?? []
+        
+        if let url = Bundle.main.url(forResource: "Brave_Clean_URLs", withExtension: "json") {
+            self.url = url
+            do {
+                let data = try Data(contentsOf: url)
+                let jsonObject = try JSONSerialization.jsonObject(with: data, options: [])
+                self.data = jsonObject
+                print(jsonObject)
+                // Use jsonObject here
+            } catch {
+                print("Error reading JSON: \(error)")
+            }
+        }
     }
     // JSON data with configurations
+    var url:URL?
     let jsonData: [String: Any]
+    var data:Any?
     
     // Extract configurations
     let includePatterns:[String]
